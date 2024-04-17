@@ -140,6 +140,9 @@ h6 {
   padding-bottom: 20px;
   padding-left: 20px;
 }
+.we-doing {
+  display: none;
+}
 
 /* Body */
 .body {
@@ -409,26 +412,12 @@ ul {
 .goals-container {
   display: none;
 }
-
-/* We doing */
-.we-doing,
-.we-doing-list,
-.we-doing-header {
+.phone-title {
   display: flex;
-  margin: auto;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
+  font-size: 30px;
 }
-.we-doing-header {
-  margin-top: 120px;
-  margin-bottom: 70px;
-}
-.we-doing-list {
-  margin-bottom: 120px;
-}
+
 /* Our team */
 .our-team-background {
   min-height: 45.75em;
@@ -533,7 +522,7 @@ svg.icon:active {
 }
 .logo-footer {
   display: flex;
-  margin: 0%;
+  margin: auto;
 }
 .footer-content {
   min-height: 19.5em;
@@ -542,7 +531,6 @@ svg.icon:active {
 .footer {
   display: flex;
   color: var(--footer-text);
-  gap: 120px;
   margin: auto;
   max-width: 1128px;
   flex-wrap: wrap;
@@ -557,7 +545,7 @@ svg.icon:active {
 }
 .social-mediaheader {
   display: flex;
-  margin: 0%;
+  margin: auto;
   margin-bottom: 20px;
 }
 .footer-first-container {
@@ -577,45 +565,55 @@ svg.icon:active {
 /* subscribe footer */
 .Subscribe-footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
+}
+.subscribe-header {
+  display: flex;
+  justify-content: center;
 }
 .imput-email {
   font-family: var(--font-family-roboto);
   display: flex;
   margin: auto;
+  align-content: stretch;
   background-color: var(--footer-background);
   border-radius: 0.4ch;
   height: 40px;
-  border-color: #fff;
-  color: var(--footer-text);
+  width: 300px;
+  border-style: solid;
+  outline: var(--light-slate);
+  color: var(--light-slate);
 }
 .imput-email::placeholder {
-  color: var(--footer-text);
+  color: var(--light-slate);
   display: flex;
   padding-left: 16px;
   margin: auto;
+  font-size: small;
 }
 .subscribe-label {
   display: flex;
   margin: auto;
-  margin-top: 50px;
   flex-direction: column;
 }
 .button-footer {
   display: flex;
   flex-direction: row;
   color: var(--filter-button-text-hover);
-  height: 24px;
+  height: 20px;
   margin: auto;
-  margin-top: 100px;
-  margin-left: 24px;
+  margin-top: 20px;
   background-color: var(--order-button-background-color);
   border: none;
   border-radius: 0.4cap;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 18px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-bottom: 70px;
 }
 .button-footer:hover,
 .button-footer:focus {
@@ -892,6 +890,27 @@ svg.icon:active {
   .goals-container {
     display: initial;
   }
+
+  /* We doing */
+  .we-doing,
+  .we-doing-list,
+  .we-doing-header {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .we-doing-header {
+    margin-top: 120px;
+    margin-bottom: 70px;
+  }
+  .we-doing-list {
+    margin-bottom: 120px;
+  }
+
   /* footer content */
   .logo-footer::after {
     content: "studio";
