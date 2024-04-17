@@ -101,8 +101,8 @@ h6 {
   row-gap: 40px;
   font-size: 40px;
   margin: auto;
-  margin-top: 40px;
-  margin-left: 20px;
+  margin-top: 25px;
+  margin-left: 10px;
 }
 .mobile-nav-item {
   color: var(--Body-text-color);
@@ -120,7 +120,7 @@ h6 {
 }
 .mobile-menu-phone {
   display: flex;
-  font-size: 40px;
+  font-size: 4ch;
   font-family: var(--font-family-roboto);
   font-weight: 600;
   color: var(--button-color-filters);
@@ -136,8 +136,8 @@ h6 {
   display: flex;
   flex-direction: column;
   row-gap: 40px;
-  padding-top: 284px;
-  padding-bottom: 48px;
+  padding-top: 90%;
+  padding-bottom: 12%;
 }
 
 /* Body */
