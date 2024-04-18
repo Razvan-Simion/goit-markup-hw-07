@@ -166,7 +166,7 @@ ul {
   background-image: url("../images/people-office.jpg");
   background-size: cover;
   justify-content: center;
-  min-height: 37.5em;
+  min-height: 436px;
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -706,9 +706,7 @@ svg.icon:active {
   color: #fff;
   margin: 0;
 }
-
 /* Stiluri mobil */
-
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -772,11 +770,6 @@ svg.icon:active {
 
 @media screen and (min-width: 428px) {
   /* Stiluri tabletă */
-}
-
-@media screen and (min-width: 768px) {
-  /* Stiluri desktop */
-
   .menu {
     display: none;
   }
@@ -786,11 +779,11 @@ svg.icon:active {
   }
   .nav {
     display: flex;
+    flex-direction: row;
     align-content: center;
     justify-content: space-evenly;
     font-family: var(--font-family-roboto);
     font-weight: 500;
-    flex-wrap: wrap;
     gap: 24px;
     padding-left: 0%;
   }
@@ -821,203 +814,56 @@ svg.icon:active {
     display: flex;
     margin: auto;
     max-width: 1440px;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     border-style: none none solid;
     border-width: thin;
     border-color: var(--filter-button-background);
   }
-  .contact-links {
+  .header-links {
     display: flex;
-    flex-wrap: wrap;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
     gap: 24px;
+    row-gap: 10px;
   }
-  /* Hero section */
   .hero-section {
     display: flex;
-    background-image: url("../images/people-office.jpg");
-    background-size: cover;
-    justify-content: center;
-    min-height: 37.5em;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    width: 100%;
-  }
-  .hero-section::before {
-    content: "";
-    background-color: var(--hero-image-background);
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: 0;
-  }
-  .hero-title {
-    display: flex;
     margin: auto;
-    margin-bottom: 24px;
-    justify-content: center;
-    align-items: center;
-    max-width: 500px;
-    color: var(--hero-title);
-    letter-spacing: 0.02em;
-    font-size: 56px;
-    z-index: 1;
+    max-height: 436px;
   }
-  .order-button {
-    margin: auto;
-    margin-top: 24px;
-    background-color: var(--order-button-background-color);
-    color: var(--hero-title);
-    display: flex;
-    border: 0cap;
-    border-radius: 0.6lvh;
-    width: 169px;
-    height: 56px;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
-  .order-button:hover,
-  .order-button:focus {
-    cursor: pointer;
-    position: relative;
-    background-color: var(--button-hover-focus);
-    transition: var(--transitions);
-  }
-  .goals-container {
-    display: initial;
-  }
-
-  /* We doing */
-  .we-doing,
-  .we-doing-list,
-  .we-doing-header {
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-  }
-  .we-doing-header {
-    margin-top: 120px;
-    margin-bottom: 70px;
-  }
-  .we-doing-list {
-    margin-bottom: 120px;
-  }
-
-  /* footer content */
-  .logo-footer::after {
-    content: "studio";
-    color: var(--logo-footer-after);
-    font-family: var(--font-family-raleway);
-    font-weight: 700;
-  }
-  .logo-footer {
-    display: flex;
-    margin: 0%;
-  }
-  .footer-content {
-    min-height: 19.5em;
-    background-color: var(--footer-background);
-  }
-  .footer {
-    display: flex;
-    color: var(--footer-text);
-    gap: 120px;
-    margin: auto;
-    max-width: 1128px;
-    flex-wrap: wrap;
-  }
-  .social-media,
-  .footer-first-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-    flex-wrap: wrap;
-    margin: auto;
-  }
-  .social-mediaheader {
-    display: flex;
-    margin: 0%;
-    margin-bottom: 20px;
-  }
-  .footer-first-container {
-    max-width: 264px;
-  }
-  .social-media {
-    display: flex;
-    max-width: 208px;
-    margin: auto;
-  }
-  .social-content {
-    display: flex;
-  }
-  .footer-icon-list {
-    gap: 16px;
-  }
-  /* subscribe footer */
   .Subscribe-footer {
     display: flex;
     flex-direction: row;
-    margin: auto;
-  }
-  .imput-email {
-    font-family: var(--font-family-roboto);
-    display: flex;
-    margin: auto;
-    background-color: var(--footer-background);
-    border-radius: 0.4ch;
-    height: 40px;
-    border-color: #fff;
-    color: var(--footer-text);
-  }
-  .imput-email::placeholder {
-    color: var(--footer-text);
-    display: flex;
-    padding-left: 16px;
-    margin: auto;
-  }
-  .subscribe-label {
-    display: flex;
-    margin: auto;
-    margin-top: 50px;
-    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 30px;
   }
   .button-footer {
     display: flex;
-    flex-direction: row;
-    color: var(--filter-button-text-hover);
-    height: 24px;
     margin: auto;
-    margin-top: 100px;
-    margin-left: 24px;
-    background-color: var(--order-button-background-color);
-    border: none;
-    border-radius: 0.4cap;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    margin-left: 20px;
+    margin-top: 72px;
   }
-  .button-footer:hover,
-  .button-footer:focus {
-    background-color: var(--button-hover-focus);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .subscribe-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
   }
-  [class^="icon-Frame-3"],
-  [class*="icon-Frame-3"] {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-left: 16px;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
+  .footer-content {
+    display: flex;
+    max-height: 768px;
   }
+  .logo-footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+  }
+  .social-mediaheader {
+    display: flex;
+    margin: auto;
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
 }
