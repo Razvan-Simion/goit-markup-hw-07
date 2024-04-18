@@ -50,8 +50,8 @@ h5,
 h6 {
   font-family: var(--font-family-roboto);
 }
+/* Stiluri mobil */
 /* Header */
-
 .header-mobile {
   display: flex;
   justify-content: space-between;
@@ -74,7 +74,8 @@ h6 {
 .logo {
   display: flex;
   justify-content: center;
-  margin-top: 14px;
+  margin-top: 18px;
+  margin-right: 20px;
 }
 .logo-link {
   display: flex;
@@ -87,12 +88,10 @@ h6 {
   text-transform: uppercase;
   text-decoration: none;
 }
-
 .header-links,
 .header-links a {
   display: none;
 }
-
 .mobile-nav {
   display: flex;
   flex-direction: column;
@@ -112,7 +111,6 @@ h6 {
 .mobile-nav-item:active {
   color: var(--button-color-filters);
 }
-
 .mobile-nav-item,
 .mobile-menu-phone,
 .mobile-menu-mail {
@@ -143,7 +141,6 @@ h6 {
 .we-doing {
   display: none;
 }
-
 /* Body */
 .body {
   font-family: "Roboto", sans-serif;
@@ -532,7 +529,7 @@ svg.icon:active {
   display: flex;
   color: var(--footer-text);
   margin: auto;
-  max-width: 1128px;
+  max-width: 1440px;
   flex-wrap: wrap;
 }
 .social-media,
@@ -706,14 +703,12 @@ svg.icon:active {
   color: #fff;
   margin: 0;
 }
-/* Stiluri mobil */
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -726,7 +721,6 @@ svg.icon:active {
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -735,16 +729,13 @@ svg.icon:active {
   height: 100vh;
   padding: 32px;
   background-color: var(--header-background);
-  z-index: 999;
-
+  z-index: 1;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
-
 .menu-container.is-open {
   transform: translateX(0);
 }
-
 .menu-container .menu-toggle {
   position: absolute;
   top: 16px;
@@ -752,22 +743,17 @@ svg.icon:active {
   color: var(--Body-text-color);
   background-color: var(--accent-color-filters);
 }
-
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
 .mobile-menu .link {
   display: block;
   padding: 10px;
   color: #fff;
   text-decoration: none;
 }
-
-/* Stiluri mobil */
-
 @media screen and (min-width: 428px) {
   /* Stiluri tabletă */
   .menu {
@@ -813,7 +799,7 @@ svg.icon:active {
     background-color: var(--header-background);
     display: flex;
     margin: auto;
-    max-width: 1440px;
+    max-width: 768px;
     justify-content: space-evenly;
     border-style: none none solid;
     border-width: thin;
@@ -826,6 +812,7 @@ svg.icon:active {
     justify-content: space-between;
     gap: 24px;
     row-gap: 10px;
+    margin-left: 20px;
   }
   .hero-section {
     display: flex;
@@ -866,4 +853,84 @@ svg.icon:active {
   }
 }
 @media screen and (min-width: 768px) {
+  .contact-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .header {
+    max-width: 1300px;
+  }
+  .contact-space {
+    margin-inline-start: 250px;
+  }
+  /* Hero section desk-styl*/
+  .hero-section {
+    min-height: 37.5em;
+    width: 100%;
+  }
+  .hero-title {
+    margin: auto;
+    margin-bottom: 24px;
+    max-width: 500px;
+    letter-spacing: 0.02em;
+    font-size: 56px;
+  }
+  .order-button {
+    margin: auto;
+    margin-top: 24px;
+  }
+  /* Our goals desk-style */
+  .goals-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background-color: var(--we-doing-background);
+    border-radius: 0.5cap;
+  }
+  .our-goals li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 264px;
+    margin: auto;
+  }
+  /* We doing desk-style*/
+  .we-doing,
+  .we-doing-list,
+  .we-doing-header {
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .we-doing-header {
+    margin-top: 120px;
+    margin-bottom: 70px;
+  }
+  .we-doing-list {
+    margin-bottom: 120px;
+  }
+  .desk-title {
+    font-size: larger;
+    justify-content: flex-start;
+  }
+  .customers-title,
+  .we-doing-header,
+  .our-team-header {
+    font-size: x-large;
+  }
+  .footer {
+    gap: 70px;
+    padding-bottom: 50px;
+  }
+  .button-footer {
+    height: 24px;
+    margin-left: 24px;
+    padding: 20px;
+  }
 }
