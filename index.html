@@ -170,9 +170,30 @@
             <div>
                 <h2 class="we-doing-header">What are we doing</h2>
                 <ul class="we-doing-list">
-                    <li><img src="./images/img_1.jpg" width="360" height="300" alt="image_1"></li>
-                    <li><img src="./images/img_2.jpg" width="360" height="300" alt="image_2"></li>
-                    <li><img src="./images/img_3.jpg" width="360" height="300" alt="image_3"></li>
+                    <li>
+                        <picture>
+                            <!-- versiune desktop -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/img_1.jpg, ../images/desk 2x/img1doingdesk2x.png" />
+                            <img src="./images/img_1.jpg" height="300" alt="image_1">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <!-- versiune desktop -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/img_2.jpg, ../images/desk 2x/img 2 doing desk 2x.png" />
+                            <img src="./images/img_2.jpg" height="300" alt="image_2">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <!-- versiune desktop -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/img_3.jpg, ../images/desk 2x/img 3 doing des 2x.png" />
+                            <img src="./images/img_3.jpg" height="300" alt="image_3">
+                        </picture>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -182,7 +203,15 @@
                 <h2 class="our-team-header phone-title">Our Team</h2>
                 <ul class="our-team">
                     <li class="our-team-card">
-                        <img src="./images/img_mark.jpg" width="264" height="260" alt="Mark Guerrero">
+                        <picture>
+                            <!-- versiune desktop -->
+                            <source media="(min-width: 1200px)"
+                                srcset="./images/img_mark.jpg 1x, ../images/desk 2x/imgmark desk 2x.png 2x" />
+                            <!-- versiune tableta -->
+                            <source media="(min-width: 768px)"
+                                srcset="../images.mobile/Mark Guerrero mobile 1x.png, ../images/mobile/Mark Guerrero mobile 2x.png" />
+                            <img src="./images/img_mark.jpg" height="260" alt="Mark Guerrero">
+                        </picture>
                         <h3>Mark Guerrero</h3>
                         <p>Product Designer</p>
                         <div class="icon-list">
