@@ -524,7 +524,6 @@ svg.icon:active {
   background-color: var(--footer-background);
 }
 .footer {
-  display: flex;
   color: var(--footer-text);
   margin: auto;
   max-width: 1440px;
@@ -771,19 +770,17 @@ svg.icon:active {
   display: flex;
   align-items: center;
   height: auto;
-  margin-top: 140px;
-  position: absolute;
-  z-index: -1;
-  margin-bottom: 200px;
+  max-width: 280px;
+  display: flex;
 }
 .link_404 {
   display: flex;
   justify-content: center;
   border-radius: 1cap;
-  padding: 20px;
+  padding: 15px;
   border: none;
   background-color: var(--button-color-filters);
-  width: 300px;
+  max-width: 250px;
   color: var(--accent-color-filters);
   font-size: x-large;
 }
@@ -792,6 +789,7 @@ svg.icon:active {
 }
 .button404 a {
   text-decoration: none;
+  margin: auto;
 }
 .button404 {
   display: flex;
@@ -803,11 +801,64 @@ svg.icon:active {
   display: flex;
   justify-content: center;
   margin: auto;
-  padding-top: 350px;
   margin-bottom: 20px;
 }
 @media screen and (min-width: 428px) {
   /* Stiluri tabletă */
+  .hero-section {
+    display: flex;
+    margin: auto;
+    max-height: 436px;
+  }
+  .Subscribe-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  .button-footer {
+    display: flex;
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 72px;
+  }
+  .subscribe-header {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 35px;
+  }
+  .footer-content {
+    display: flex;
+    max-height: 768px;
+  }
+  .footer-first-container {
+    margin-left: 20px;
+  }
+  .logo-footer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 0%;
+  }
+  .social-media {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .social-mediaheader {
+    display: flex;
+    margin: auto;
+    margin-left: 0%;
+    margin-bottom: 20px;
+  }
+  .imput-email {
+    display: flex;
+  }
+  .footer {
+    display: flex;
+  }
+}
+@media screen and (min-width: 587px) {
   .menu {
     display: none;
   }
@@ -865,46 +916,8 @@ svg.icon:active {
     row-gap: 10px;
     margin-left: 20px;
   }
-  .hero-section {
-    display: flex;
-    margin: auto;
-    max-height: 436px;
-  }
-  .Subscribe-footer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-bottom: 30px;
-  }
-  .button-footer {
-    display: flex;
-    margin: auto;
-    margin-left: 20px;
-    margin-top: 72px;
-  }
-  .subscribe-header {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 35px;
-  }
-  .footer-content {
-    display: flex;
-    max-height: 768px;
-  }
-  .logo-footer {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 0%;
-  }
-  .social-mediaheader {
-    display: flex;
-    margin: auto;
-    margin-left: 0%;
-    margin-bottom: 20px;
-  }
-  .imput-email {
-    display: flex;
+  .image {
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -918,7 +931,7 @@ svg.icon:active {
   .contact-space {
     margin-inline-start: 250px;
   }
-  /* Hero section desk-styl*/
+  /* Hero section desk */
   .hero-section {
     min-height: 37.5em;
     width: 100%;
@@ -951,7 +964,7 @@ svg.icon:active {
     max-width: 264px;
     margin: auto;
   }
-  /* We doing desk-style*/
+  /* We doing desk-style */
   .we-doing,
   .we-doing-list,
   .we-doing-header {
