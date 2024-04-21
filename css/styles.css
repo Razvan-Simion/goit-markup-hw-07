@@ -667,8 +667,11 @@ svg.icon:active {
 }
 
 .portofolio-list {
-  margin-left: 5px;
-  margin-right: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .portofolio-list:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
