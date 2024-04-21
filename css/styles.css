@@ -806,13 +806,11 @@ svg.icon:active {
   padding-top: 350px;
   margin-bottom: 20px;
 }
-
 @media screen and (min-width: 428px) {
   /* Stiluri tabletă */
   .menu {
     display: none;
   }
-
   .menu-toggle {
     display: none;
   }
